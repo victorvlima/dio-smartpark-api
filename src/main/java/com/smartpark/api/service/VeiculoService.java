@@ -1,14 +1,17 @@
 package com.smartpark.api.service;
 
-import com.smartpark.api.dto.VeiculoEntradaDTO;
-import com.smartpark.api.entity.Veiculo;
-import com.smartpark.api.exception.RecursoNaoEncontradoException;
-import com.smartpark.api.repository.VeiculoRepository;
+import java.util.List;
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
+import com.smartpark.api.dto.VeiculoEntradaDTO;
+import com.smartpark.api.entity.Veiculo;
+import com.smartpark.api.enums.StatusEstacionamento;
+import com.smartpark.api.exception.RecursoNaoEncontradoException;
+import com.smartpark.api.repository.VeiculoRepository;
 
 @Service
 public class VeiculoService {
