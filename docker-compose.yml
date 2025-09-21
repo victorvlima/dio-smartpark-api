@@ -7,7 +7,7 @@ services:
       POSTGRES_USER: user_smartpark
       POSTGRES_PASSWORD: password_smartpark
     ports:
-      - "5433:5433"
+      - "5432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
